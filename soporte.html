@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones y Soporte - Alquiler de Vehículos P2P</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de FontAwesome para UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- NAVBAR / CABECERA PRINCIPAL               -->
+    <!-- ========================================== -->
+    <header class="navbar-header">
+        <div class="nav-container">
+            <div class="logo-area">
+                <span class="badge-p2p">P2P</span>
+                <div class="logo-text">
+                    <h1>Alquiler de Vehículos P2P</h1>
+                    <small>PLATAFORMA DE VEHÍCULOS · V0.1</small>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html#inicio">Inicio</a>
+                <a href="index.html#catalogo">Catálogo</a>
+                <a href="index.html#beneficios">Beneficios</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Menú Desplegable de Perfiles -->
+                <div class="dropdown">
+                    <button class="btn-dropdown">
+                        Acceso Perfiles <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="conductor.html"><i class="fa-solid fa-user"></i> Perfil Conductor</a>
+                        <a href="propietario.html"><i class="fa-solid fa-car"></i> Perfil Propietario</a>
+                        <a href="soporte.html"><i class="fa-solid fa-shield-halved"></i> Operaciones y Soporte</a>
+                    </div>
+                </div>
+
+                <button class="btn-login" onclick="alert('Modal de Iniciar Sesión')">Iniciar Sesión</button>
+
+                <!-- Menú Desplegable de Registro -->
+                <div class="dropdown">
+                    <button class="btn-register">Crear Cuenta <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#registro-cliente">Como Arrendatario</a>
+                        <a href="#registro-propietario">Como Propietario</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================== -->
+        <!-- PORTAL DEL ADMINISTRADOR (SOPORTE Y OPERACIONES) -->
+        <!-- ========================================== -->
+        <section id="portal-soporte" class="panel-section">
+            <div class="panel-header-tag">PORTAL DEL ADMINISTRADOR</div>
+            <h2>Panel de Control Operativo y Moderación</h2>
+
+            <!-- Sistema de Alertas -->
+            <div class="alert-banner">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span><strong>Alerta Activa:</strong> Kawasaki Z900 (LUX-01A) salió de la zona permitida. Vehículo inmovilizado preventivamente.</span>
+                <button class="btn-alert">Ver Caso</button>
+            </div>
+
+            <!-- DataGrid para validación documental y peritajes -->
+            <div class="admin-datagrid-box">
+                <h3>Validación Documental y Licencias (#peritajes #licencias)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Usuario / Vehículo</th>
+                            <th>Tipo de Documento</th>
+                            <th>Estado Actual</th>
+                            <th>Acciones de Moderación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>J. Restrepo</td>
+                            <td>Licencia de Conducción B1</td>
+                            <td><span class="badge warning">Pendiente</span></td>
+                            <td>
+                                <button class="btn-action approve">Aprobar</button>
+                                <button class="btn-action reject">Rechazar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kawasaki Z900</td>
+                            <td>Peritaje Técnico Anual</td>
+                            <td><span class="badge danger">Vencido</span></td>
+                            <td>
+                                <button class="btn-action warn">Notificar Propietario</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- PIE DE PÁGINA (FOOTER)                    -->
+    <!-- ========================================== -->
+    <footer class="footer-corporate">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Términos del Servicio</a>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Contáctanos</a>
+            </div>
+            <div class="footer-legal">
+                <p>Legal glecer onna scair lirtis iteda obce rartator ia vehiculo pox testib atorma. Lite puca onumdo akar marteryra canera y cet pontar de tus cantos.</p>
+                <small>v0.1 — 2026 Alquiler de Vehículos P2P</small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
